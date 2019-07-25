@@ -28,10 +28,6 @@ namespace EntsoE_API_Service
             var p = new Program();
             await p.removeDuplicateDbEntries();
 
-            //p.DownloadGererationForecasts().GetAwaiter().GetResult();
-
-            //var result = await ApiClient.Query_Generation_Forecast(EntsoE_DataModel.Domain.DomainName.GB, new DateTime(2016,01,02), new DateTime(2016, 01, 03));
-
             Console.ReadLine();
         }
 
