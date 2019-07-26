@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Serialization;
-using static EntsoE_DataModel.Domain;
+using static EntsoE_DataModel.Country;
 
 namespace EntsoE_DataAccess.Utils
 {
@@ -19,7 +19,7 @@ namespace EntsoE_DataAccess.Utils
         {
         }
 
-        public static async Task<ReponseObject<GL_MarketDocument>> Query_Generation_Forecast(DomainName countryCode, DateTime startDate, DateTime endDate)
+        public static async Task<ReponseObject<GL_MarketDocument>> Query_Generation_Forecast(Code countryCode, DateTime startDate, DateTime endDate)
         {
             var parameters = new List<Parameter> {
                  new Parameter("documentType", "A71", ParameterType.QueryString),

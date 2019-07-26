@@ -4,11 +4,11 @@ using System.Linq;
 
 namespace EntsoE_DataModel
 {
-    public static class Domain
+    public static class Country
     {
         static Dictionary<string, string> _domains = new Dictionary<string, string>();
 
-        public enum DomainName
+        public enum Code
         {
             AL,
             AT,
@@ -54,7 +54,7 @@ namespace EntsoE_DataModel
             DE_LU,
         }
 
-        static Domain()
+        static Country()
         {
             _domains.Add("AL", "10YAL-KESH-----5");
             _domains.Add("AT", "10YAT-APG------L");
@@ -105,12 +105,12 @@ namespace EntsoE_DataModel
             return _domains.Select(i => i.Value).ToList();
         }
 
-        public static string GetDomain(DomainName domainName)
+        public static string GetDomain(Code domainName)
         {
             return _domains.Where(i => i.Key == domainName.ToString().Replace("_","-")).FirstOrDefault().Value;
         }
 
-        public static List<string> GetDomains(List<DomainName> codes)
+        public static List<string> GetDomains(List<Code> codes)
         {
             return _domains.Where(i => codes.Select(x => x.ToString().Replace("_", "-")).ToList().Contains(i.Key)).Select(i => i.Value).ToList();
         }

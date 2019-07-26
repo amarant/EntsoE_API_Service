@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntsoE_DataAccess", "EntsoE
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntsoE_DataModel", "EntsoE_DataModel\EntsoE_DataModel.csproj", "{90A5DFA3-2296-4CDB-9478-855AD1A31BDD}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntsoE_BusinessLogic", "EntsoE_BusinessLogic\EntsoE_BusinessLogic.csproj", "{AA42B5F6-BEB5-4BD0-A044-5E2E3D7456AF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,14 @@ Global
 		{90A5DFA3-2296-4CDB-9478-855AD1A31BDD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{90A5DFA3-2296-4CDB-9478-855AD1A31BDD}.Release|x64.ActiveCfg = Release|x64
 		{90A5DFA3-2296-4CDB-9478-855AD1A31BDD}.Release|x64.Build.0 = Release|x64
+		{AA42B5F6-BEB5-4BD0-A044-5E2E3D7456AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA42B5F6-BEB5-4BD0-A044-5E2E3D7456AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA42B5F6-BEB5-4BD0-A044-5E2E3D7456AF}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{AA42B5F6-BEB5-4BD0-A044-5E2E3D7456AF}.Debug|x64.Build.0 = Debug|Any CPU
+		{AA42B5F6-BEB5-4BD0-A044-5E2E3D7456AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA42B5F6-BEB5-4BD0-A044-5E2E3D7456AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA42B5F6-BEB5-4BD0-A044-5E2E3D7456AF}.Release|x64.ActiveCfg = Release|Any CPU
+		{AA42B5F6-BEB5-4BD0-A044-5E2E3D7456AF}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
