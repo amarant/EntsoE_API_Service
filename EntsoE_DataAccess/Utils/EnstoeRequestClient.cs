@@ -10,7 +10,7 @@ using System.Xml.Serialization;
 
 namespace EntsoE_DataAccess.Utils
 {
-    public class ReponseObject<T>
+    public class ResponseObject<T>
     {
         public T PayLoad { get; set; }
         public bool HasData { get; set; }
@@ -53,9 +53,9 @@ namespace EntsoE_DataAccess.Utils
             }
         }
 
-        public static async Task<ReponseObject<T>> Execute<T>(List<Parameter> parameters) where T : new()
+        public static async Task<ResponseObject<T>> Execute<T>(List<Parameter> parameters) where T : new()
         {
-            var returnObj = new ReponseObject<T>();
+            var returnObj = new ResponseObject<T>();
 
             var request = new RestRequest(Method.GET);
 

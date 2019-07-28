@@ -19,7 +19,7 @@ namespace EntsoE_DataAccess.Utils
         {
         }
 
-        public static async Task<ReponseObject<GL_MarketDocument>> Query_Generation_Forecast(Code countryCode, DateTime startDate, DateTime endDate)
+        public static async Task<ResponseObject<GL_MarketDocument>> Query_Generation_Forecast(Code countryCode, DateTime startDate, DateTime endDate)
         {
             var parameters = new List<Parameter> {
                  new Parameter("documentType", "A71", ParameterType.QueryString),

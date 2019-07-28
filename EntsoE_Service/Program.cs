@@ -8,9 +8,8 @@ namespace EntsoE_API_Service
     {
         static async Task Main(string[] args)
         {
-            ILoader genForecast = new ForecastGenerationLoader(5, 900000);
+            ILoader genForecast = new ForecastGenerationLoader();
             Console.ReadLine();
         }
-
     }
 }
